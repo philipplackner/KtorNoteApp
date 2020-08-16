@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/authFragment">
+
+    <fragment
+        android:id="@+id/addEditNoteFragment"
+        android:name="com.androiddevs.ktornoteapp.ui.addeditnote.AddEditNoteFragment"
+        android:label="AddEditNoteFragment" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.androiddevs.ktornoteapp.ui.auth.AuthFragment"
+        android:label="AuthFragment" >
+        <action
+            android:id="@+id/action_authFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteDetailFragment"
+        android:name="com.androiddevs.ktornoteapp.ui.notedetail.NoteDetailFragment"
+        android:label="NoteDetailFragment" >
+        <action
+            android:id="@+id/action_noteDetailFragment_to_addEditNoteFragment"
+            app:destination="@id/addEditNoteFragment" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.androiddevs.ktornoteapp.ui.notes.NotesFragment"
+        android:label="NotesFragment" >
+        <action
+            android:id="@+id/action_notesFragment_to_addEditNoteFragment"
+            app:destination="@id/addEditNoteFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_noteDetailFragment"
+            app:destination="@id/noteDetailFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_authFragment"
+            app:destination="@id/authFragment" />
+    </fragment>
+</navigation>
