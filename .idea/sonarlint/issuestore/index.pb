@@ -53,3 +53,9 @@ p
 @app/src/main/java/com/androiddevs/ktornoteapp/ui/BaseFragment.kt,c\9\c9c5d3b0a60900cb7dfb20af287526767c98221e
 p
 @app/src/main/java/com/androiddevs/ktornoteapp/ui/MainActivity.kt,1\5\15201ca0b36d5f3256b7cb8190380dbdd9a4ba64
+o
+?app/src/main/java/com/androiddevs/ktornoteapp/other/Resource.kt,5\a\5a50a782c7adb74c6430170166c9e659ea451a2d
+l
+<app/src/main/java/com/androiddevs/ktornoteapp/other/Event.kt,d\6\d631eb2f746bc9d9ce7d08c026d2fe92cf3679d7
+v
+Fapp/src/main/java/com/androiddevs/ktornoteapp/other/InternetChecker.kt,7\a\7a597eaab95da685d519c7e6217d4de82953a6fd
