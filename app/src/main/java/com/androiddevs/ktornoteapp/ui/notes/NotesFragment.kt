@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.view.*
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.androiddevs.ktornoteapp.R
+import com.androiddevs.ktornoteapp.adapters.NoteAdapter
 import com.androiddevs.ktornoteapp.other.Constants.KEY_LOGGED_IN_EMAIL
 import com.androiddevs.ktornoteapp.other.Constants.KEY_PASSWORD
 import com.androiddevs.ktornoteapp.other.Constants.NO_EMAIL
@@ -21,6 +23,8 @@ class NotesFragment : BaseFragment(R.layout.fragment_notes) {
     @Inject
     lateinit var sharedPref: SharedPreferences
 
+    private lateinit var noteAdapter: NoteAdapter
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -32,9 +36,17 @@ class NotesFragment : BaseFragment(R.layout.fragment_notes) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setupRecyclerView()
+
         fabAddNote.setOnClickListener {
             findNavController().navigate(NotesFragmentDirections.actionNotesFragmentToAddEditNoteFragment(""))
         }
+    }
+
+    private fun setupRecyclerView() = rvNotes.apply {
+        noteAdapter = NoteAdapter()
+        adapter = noteAdapter
+        layoutManager = LinearLayoutManager(requireContext())
     }
 
     private fun logout() {
