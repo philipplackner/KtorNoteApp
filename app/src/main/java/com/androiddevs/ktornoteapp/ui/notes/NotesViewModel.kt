@@ -1,6 +1,24 @@
 package com.androiddevs.ktornoteapp.ui.notes
 
-import androidx.lifecycle.ViewModel
+import androidx.hilt.lifecycle.ViewModelInject
+import androidx.lifecycle.*
+import com.androiddevs.ktornoteapp.data.local.entities.Note
+import com.androiddevs.ktornoteapp.other.Event
+import com.androiddevs.ktornoteapp.other.Resource
+import com.androiddevs.ktornoteapp.repositories.NoteRepository
 
-class NotesViewModel : ViewModel() {
+class NotesViewModel @ViewModelInject constructor(
+    private val repository: NoteRepository
+) : ViewModel() {
+
+    private val _forceUpdate = MutableLiveData<Boolean>(false)
+
+    private val _allNotes = _forceUpdate.switchMap {
+        repository.getAllNotes().asLiveData(viewModelScope.coroutineContext)
+    }.switchMap {
+        MutableLiveData(Event(it))
+    }
+    val allNotes: LiveData<Event<Resource<List<Note>>>> = _allNotes
+
+    fun syncAllNotes() = _forceUpdate.postValue(true)
 }
