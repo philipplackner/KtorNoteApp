@@ -2,9 +2,11 @@ package com.androiddevs.ktornoteapp.repositories
 
 import android.app.Application
 import com.androiddevs.ktornoteapp.data.local.NoteDao
+import com.androiddevs.ktornoteapp.data.local.entities.LocallyDeletedNoteID
 import com.androiddevs.ktornoteapp.data.local.entities.Note
 import com.androiddevs.ktornoteapp.data.remote.NoteApi
 import com.androiddevs.ktornoteapp.data.remote.requests.AccountRequest
+import com.androiddevs.ktornoteapp.data.remote.requests.DeleteNoteRequest
 import com.androiddevs.ktornoteapp.other.Resource
 import com.androiddevs.ktornoteapp.other.checkForInternetConnection
 import com.androiddevs.ktornoteapp.other.networkBoundResource
@@ -33,6 +35,24 @@ class NoteRepository @Inject constructor(
 
     suspend fun insertNotes(notes: List<Note>) {
         notes.forEach { insertNote(it) }
+    }
+
+    suspend fun deleteNote(noteID: String) {
+        val response = try {
+            noteApi.deleteNote(DeleteNoteRequest(noteID))
+        } catch (e: Exception) {
+            null
+        }
+        noteDao.deleteNoteById(noteID)
+        if(response == null || !response.isSuccessful) {
+            noteDao.insertLocallyDeletedNoteID(LocallyDeletedNoteID(noteID))
+        } else {
+            deleteLocallyDeletedNoteID(noteID)
+        }
+    }
+
+    suspend fun deleteLocallyDeletedNoteID(deletedNoteID: String) {
+        noteDao.deleteLocallyDeletedNoteID(deletedNoteID)
     }
 
     suspend fun getNoteById(noteID: String) = noteDao.getNoteById(noteID)

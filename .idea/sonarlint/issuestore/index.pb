@@ -59,3 +59,9 @@ l
 <app/src/main/java/com/androiddevs/ktornoteapp/other/Event.kt,d\6\d631eb2f746bc9d9ce7d08c026d2fe92cf3679d7
 v
 Fapp/src/main/java/com/androiddevs/ktornoteapp/other/InternetChecker.kt,7\a\7a597eaab95da685d519c7e6217d4de82953a6fd
+{
+Kapp/src/main/java/com/androiddevs/ktornoteapp/other/NetworkBoundResource.kt,7\f\7f95f1c4a045bea3bb155d48696f8a0af79fecea
+…
+Uapp/src/main/java/com/androiddevs/ktornoteapp/ui/dialogs/ColorPickerDialogFragment.kt,4\6\465d2c2029484653520f714e296ff5b482776119
+u
+Eapp/src/main/java/com/androiddevs/ktornoteapp/adapters/NoteAdapter.kt,4\7\473d2767091f49cc92c7022c97b0e811f3cfdf89
