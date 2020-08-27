@@ -65,3 +65,7 @@ Kapp/src/main/java/com/androiddevs/ktornoteapp/other/NetworkBoundResource.kt,7\
 Uapp/src/main/java/com/androiddevs/ktornoteapp/ui/dialogs/ColorPickerDialogFragment.kt,4\6\465d2c2029484653520f714e296ff5b482776119
 u
 Eapp/src/main/java/com/androiddevs/ktornoteapp/adapters/NoteAdapter.kt,4\7\473d2767091f49cc92c7022c97b0e811f3cfdf89
+‰
+Yapp/src/main/java/com/androiddevs/ktornoteapp/data/local/entities/LocallyDeletedNoteID.kt,5\e\5ecd877ca2cec3622f3012316ea78e7a368c9143
+z
+Japp/src/main/java/com/androiddevs/ktornoteapp/ui/dialogs/AddOwnerDialog.kt,d\3\d35d36b00e49db1b5ac77ca3417d23e975a1d8d2
