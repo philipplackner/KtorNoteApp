@@ -3,10 +3,6 @@
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
-y
-Iapp/src/main/java/com/androiddevs/ktornoteapp/data/local/entities/Note.kt,4\9\4962dba7579c147d56b4d1840c0c7600a188c420
 v
 Fapp/src/main/java/com/androiddevs/ktornoteapp/data/local/Converters.kt,5\9\59a98b081dd5d1f7720fd83a6adae8a9b13eb3ea
 s
@@ -21,24 +17,14 @@ Wapp/src/main/java/com/androiddevs/ktornoteapp/data/remote/requests/DeleteNoteRe
 Uapp/src/main/java/com/androiddevs/ktornoteapp/data/remote/responses/SimpleResponse.kt,1\7\17942842a963d83a826f86c3f4152ddaf787b93e
 Ñ
 Tapp/src/main/java/com/androiddevs/ktornoteapp/data/remote/requests/AccountRequest.kt,c\b\cbe10236d51e7983561c817d29241b7971d65011
-t
-Dapp/src/main/java/com/androiddevs/ktornoteapp/data/remote/NoteApi.kt,2\6\26ba2b259c3ceb93efcbda63e11e0480b7e99322
 p
 @app/src/main/java/com/androiddevs/ktornoteapp/other/Constants.kt,3\2\3244708551cc3f7c9020e51686ed940e63050207
-Å
-Qapp/src/main/java/com/androiddevs/ktornoteapp/data/remote/BasicAuthInterceptor.kt,b\d\bdcf5443be6eb23fd5efc04f3911c02675f67c42
 p
 @app/src/main/java/com/androiddevs/ktornoteapp/NoteApplication.kt,a\e\ae3471360eeaa41e445d73f46a97c093464736cc
-m
-=app/src/main/java/com/androiddevs/ktornoteapp/di/AppModule.kt,0\b\0bcbefa8864075d3c3bc8150b7c61eb3330eff70
-|
-Lapp/src/main/java/com/androiddevs/ktornoteapp/repositories/NoteRepository.kt,2\9\291e2780504cd81beea3e6e7109b8f4aa5f56a49
 É
 Sapp/src/main/java/com/androiddevs/ktornoteapp/ui/addeditnote/AddEditNoteFragment.kt,3\8\385fe2643ade2e53032cab4cc0c7727230dc7fa7
 Ñ
 Tapp/src/main/java/com/androiddevs/ktornoteapp/ui/addeditnote/AddEditNoteViewModel.kt,8\0\80f4b022ffc4480352ab3521b21b1a2de6dc5bc1
-u
-Eapp/src/main/java/com/androiddevs/ktornoteapp/ui/auth/AuthFragment.kt,f\c\fc1aa542b91732a0d12359518223fe8229f4bcfb
 v
 Fapp/src/main/java/com/androiddevs/ktornoteapp/ui/auth/AuthViewModel.kt,1\5\154cdac4e19f2dbeee3e597dd0a13b3ec6018b53
 Å
@@ -57,10 +43,6 @@ o
 ?app/src/main/java/com/androiddevs/ktornoteapp/other/Resource.kt,5\a\5a50a782c7adb74c6430170166c9e659ea451a2d
 l
 <app/src/main/java/com/androiddevs/ktornoteapp/other/Event.kt,d\6\d631eb2f746bc9d9ce7d08c026d2fe92cf3679d7
-v
-Fapp/src/main/java/com/androiddevs/ktornoteapp/other/InternetChecker.kt,7\a\7a597eaab95da685d519c7e6217d4de82953a6fd
-{
-Kapp/src/main/java/com/androiddevs/ktornoteapp/other/NetworkBoundResource.kt,7\f\7f95f1c4a045bea3bb155d48696f8a0af79fecea
 Ö
 Uapp/src/main/java/com/androiddevs/ktornoteapp/ui/dialogs/ColorPickerDialogFragment.kt,4\6\465d2c2029484653520f714e296ff5b482776119
 u
@@ -69,3 +51,5 @@ Eapp/src/main/java/com/androiddevs/ktornoteapp/adapters/NoteAdapter.kt,4\7\473d
 Yapp/src/main/java/com/androiddevs/ktornoteapp/data/local/entities/LocallyDeletedNoteID.kt,5\e\5ecd877ca2cec3622f3012316ea78e7a368c9143
 z
 Japp/src/main/java/com/androiddevs/ktornoteapp/ui/dialogs/AddOwnerDialog.kt,d\3\d35d36b00e49db1b5ac77ca3417d23e975a1d8d2
+L
+.idea/codeStyles/Project.xml,6\e\6ecd6000a7b6f4a2884412ff19f74193ed089648
