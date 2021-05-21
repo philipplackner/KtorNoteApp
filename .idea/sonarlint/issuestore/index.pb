@@ -1,6 +1,4 @@
 
-<
-build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 v
@@ -23,20 +21,10 @@ p
 @app/src/main/java/com/androiddevs/ktornoteapp/NoteApplication.kt,a\e\ae3471360eeaa41e445d73f46a97c093464736cc
 ƒ
 Sapp/src/main/java/com/androiddevs/ktornoteapp/ui/addeditnote/AddEditNoteFragment.kt,3\8\385fe2643ade2e53032cab4cc0c7727230dc7fa7
-„
-Tapp/src/main/java/com/androiddevs/ktornoteapp/ui/addeditnote/AddEditNoteViewModel.kt,8\0\80f4b022ffc4480352ab3521b21b1a2de6dc5bc1
-v
-Fapp/src/main/java/com/androiddevs/ktornoteapp/ui/auth/AuthViewModel.kt,1\5\154cdac4e19f2dbeee3e597dd0a13b3ec6018b53
 
 Qapp/src/main/java/com/androiddevs/ktornoteapp/ui/notedetail/NoteDetailFragment.kt,5\7\572d0c32437e15057b54bbc571170ab0e0e55383
-‚
-Rapp/src/main/java/com/androiddevs/ktornoteapp/ui/notedetail/NoteDetailViewModel.kt,2\f\2f6bf74b38a5cfdd1bedc767787c4469f0f2fd78
 w
 Gapp/src/main/java/com/androiddevs/ktornoteapp/ui/notes/NotesFragment.kt,b\f\bf534db77ffc1b6ec4126533c6a7e3b2cea54567
-x
-Happ/src/main/java/com/androiddevs/ktornoteapp/ui/notes/NotesViewModel.kt,5\e\5e83c973cc14f8a1cece760ce51e73398ab9db0e
-p
-@app/src/main/java/com/androiddevs/ktornoteapp/ui/BaseFragment.kt,c\9\c9c5d3b0a60900cb7dfb20af287526767c98221e
 p
 @app/src/main/java/com/androiddevs/ktornoteapp/ui/MainActivity.kt,1\5\15201ca0b36d5f3256b7cb8190380dbdd9a4ba64
 o
@@ -53,3 +41,5 @@ z
 Japp/src/main/java/com/androiddevs/ktornoteapp/ui/dialogs/AddOwnerDialog.kt,d\3\d35d36b00e49db1b5ac77ca3417d23e975a1d8d2
 L
 .idea/codeStyles/Project.xml,6\e\6ecd6000a7b6f4a2884412ff19f74193ed089648
+v
+Fapp/src/main/java/com/androiddevs/ktornoteapp/other/InternetChecker.kt,7\a\7a597eaab95da685d519c7e6217d4de82953a6fd

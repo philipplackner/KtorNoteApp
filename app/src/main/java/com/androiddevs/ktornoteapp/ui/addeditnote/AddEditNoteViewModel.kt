@@ -9,10 +9,13 @@ import com.androiddevs.ktornoteapp.data.local.entities.Note
 import com.androiddevs.ktornoteapp.other.Event
 import com.androiddevs.ktornoteapp.other.Resource
 import com.androiddevs.ktornoteapp.repositories.NoteRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class AddEditNoteViewModel @ViewModelInject constructor(
+@HiltViewModel
+class AddEditNoteViewModel @Inject constructor(
     private val repository: NoteRepository
 ) : ViewModel() {
 
